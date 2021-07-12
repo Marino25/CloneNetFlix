@@ -1,0 +1,445 @@
+:root {
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Base */
+
+body {
+    
+    max-height: 1200px;
+    max-width: auto;
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;    
+}
+
+header {
+    display: flex;
+
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family:'logo-fonte';
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header nav a :hover { /*deixa a cor da letra mais branca quando o mouse esta em cima*/
+    color: #fff;
+}
+
+/* Coisas do anuncio Principal */
+
+.tema-principal {
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.50)100%), url('/img/rvteste.png');
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+
+.tema-principal .descricao { /* Descriçao Principal */
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #fff;
+
+}
+
+.titulo {                /* Titulo da descriçao */
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px ;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer; /* Muda o mouse para PONTEIRO e mostra que é clicavel */
+    transition: .3s ease all;
+    margin-left: 20px;
+}
+
+.botao:hover {
+    background-color: white ;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.tema-principal .container { /* Pega especificamente o .container dentro da tela principal*/
+    width: 70%;
+    margin-left: 20px;
+    
+}
+
+.icon-botao {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container-header {     /* Div da direita com Home, Rv, RA */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-title { /* Icone oculos */
+    width: 40px;
+    align-items: center;
+}
+
+
+
+.img {  
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;   
+    margin-left: 10px;    /*CTRL + D Seleciona Tudo com o mesmo nome pode ser modificado all */
+}
+
+.div-conteudo {
+  width: 100%;
+  height: 760px;
+  background: rgb(226, 226, 226);
+  display: flex;
+}
+
+.ra-conteudo{           /* Div conteudo RA */
+    width: 570px;
+    background: rgb(226, 226, 226);
+    margin-top: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.rv-conteudo {             /* Div RV com conteudo */
+  width: 570px;
+  margin-top: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  
+}
+
+.rm-conteudo {             /* Div RM com conteudo */
+  width: 570px;
+  margin-top: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  
+}
+
+.ra-conteudo h3 {         /* Titulo RA */
+  margin-bottom: 50px;
+  margin-left: 20px;
+  font-family: 'Lucida Console', Arial, sans-serif;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px red,
+  2px 2px 1px red;
+
+}
+
+.rv-conteudo h3 {         /* Titulo RV */
+  margin-bottom: 50px;
+  margin-left: 20px;
+  font-family: 'Lucida Console', Arial, sans-serif;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px red,
+  2px 2px 1px red;
+}
+
+.rm-conteudo h3 {         /* Titulo RM */
+  margin-bottom: 50px;
+  margin-left: 20px;
+  font-family: 'Lucida Console', Arial, sans-serif;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px red,
+  2px 2px 1px red;
+}
+
+.ra-conteudo p {          /* Conteudo RA */
+  text-align: left;
+  margin-left: 20px;
+}
+
+.rv-conteudo p {          /* Conteudo RV */
+  text-align: left;
+  margin-left: 20px;
+}
+
+.rm-conteudo p {          /* Conteudo RM */
+  text-align: left;
+  margin-left: 20px;
+}
+
+.rv-img {            /* Div imagem Rv */
+  width: 570px;
+}
+
+.ra-img {            /* Div imagem Ra */
+  width: 570px;
+}
+
+.rm-img {            /* Div imagem RM */
+  width: 570px;
+}
+
+.rv-img h3 {
+  color: Black;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-family: "titulo-rv";
+  font-size: 50px;
+  text-shadow: 1px 1px 1px red,
+             2px 2px 1px red;
+}
+
+.ra-img h3 {
+  color: Black;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-family: "titulo-rv";
+  font-size: 40px;
+  text-shadow: 1px 1px 1px red,
+             2px 2px 1px red;
+          
+}
+
+.rm-img h3 {
+  color: Black;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-family: "titulo-rv";
+  font-size: 40px;
+  text-shadow: 1px 1px 1px red,
+             2px 2px 1px red;
+          
+}
+
+/* ====================================== CARROSEL =====================================*/
+
+                            
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  max-height: 900px;
+  margin: 0;
+}
+
+.mySlides .text{
+  color: #141414;
+  font-size: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.footer-basic {
+  padding:40px 0;
+  background-color:var(--preto);
+  color:#fff;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@font-face {
+    font-family:'logo-fonte' ;
+    src: url('/Fontes/Kerox.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family:'titulo-rv' ;
+  src: url('/Fontes/Earth\ 2073.otf') format('opentype');
+  
+}
+
+@font-face {
+  font-family:'sub-rv' ;
+  src: url('/Fontes/MADE\ Future\ X\ HEADER\ Light\ PERSONAL\ USE.otf') format('opentype');
+  
+}
